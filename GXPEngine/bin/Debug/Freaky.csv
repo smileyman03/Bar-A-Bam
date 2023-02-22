@@ -1,0 +1,64 @@
+Intro;;;;;;;;;;;;;;;;
+0;0;0;0;0;0;0;0;;0;0;0;0
+0;0;0;0;0;0;0;0;;0;0;0;0;0;0;0;0
+botL;0;topR;0;topR;0;topR;0;;botL;0;topR;0;topR;0;botR;0
+botL;0;topR;0;topR;0;topR;0;;botL;0;topR;0;topR;0;botR;0
+;;;;;;;;;;;;;;;;
+pattern 1;;;;;;;;;;;;;;;;
+botR;botR;botL;0;botR;botR;topL;0;;botR;botR;botR;0;botR;botR;topR;0
+botR;botR;botL;0;botR;botR;topL;0;;botR;botR;botR;0;botR;botR;topR;0
+botR;botR;botL;0;botR;botR;topL;0;;botR;botR;botR;0;botR;botR;topR;0
+botR;botR;botL;0;botR;botR;topL;0;;botR;botR;botR;0;botR;botR;topR;0
+;;;;;;;;;;;;;;;;
+drop;;;;;;;;;;;;;;;;
+topL;0;botR;0;topL;0;botR;0;;topL;0;botR;0;topL;0;botR;0
+topL;0;botR;0;topL;0;botR;0;;topL;0;botR;0;topL;0;botR;0
+botL;botL;topL;botL;botL;botL;topL;botL;;botL;botL;topR;botL;botR;botR;topR;0
+topL;topL;topR;topR;topL;topL;topR;topR;;0;0;0;0;0;0;botR;botR
+;;;;;;;;;;;;;;;;
+frog time;;;;;;;;;;;;;;;;
+botR;0;topL;botL;topL;botL;botR;0;;topR;topR;topL;0;topL;0;botR;botR
+botR;0;topL;botL;topL;botL;botR;0;;topR;topR;topL;0;topL;0;botR;botR
+botR;0;topL;botL;topL;botL;botR;0;;topR;topR;topL;0;topL;0;botR;botR
+botR;0;topL;botL;topL;botL;botR;0;;topR;topR;topL;0;topL;0;botR;botR
+;;;;;;;;;;;;;;;;
+pattern 2;;;;;;;;;;;;;;;;
+botL;0;botR;botR;topL;0;topR;topR;;botL;0;topR;topR;topL;topL;botR;botR
+botL;0;botR;botR;topL;0;topR;topR;;botL;0;topR;topR;topL;topL;botR;botR
+botL;0;botR;botR;topL;0;topR;topR;;botL;0;topR;topR;topL;topL;botR;botR
+botL;0;botR;botR;topL;0;topR;topR;;botL;0;topR;topR;topL;topL;botR;botR
+;;;;;;;;;;;;;;;;
+beatless;;;;;;;;;;;;;;;;
+botL;0;0;0;topR;0;0;0;;botL;0;0;0;topR;0;0;0
+botL;0;0;0;topR;0;0;0;;botL;0;0;0;topR;0;0;0
+botL;0;0;0;topR;0;0;0;;botL;0;0;0;topR;0;0;0
+botL;0;0;0;topR;0;0;0;;botL;0;0;0;topR;0;0;0
+;;;;;;;;;;;;;;;;
+pattern 1+2 repeat;;;;;;;;;;;;;;;;
+botR;botR;botL;0;botR;botR;topL;0;;botR;botR;botR;0;botR;botR;topR;0
+botR;botR;botL;0;botR;botR;topL;0;;botR;botR;botR;0;botR;botR;topR;0
+botR;botR;botL;0;botR;botR;topL;0;;botR;botR;botR;0;botR;botR;topR;0
+botR;botR;botL;0;botR;botR;topL;0;;botR;botR;botR;0;botR;botR;topR;0
+;;;;;;;;;;;;;;;;
+botL;0;botR;botR;topL;0;topR;topR;;botL;0;topR;topR;topL;topL;botR;botR
+botL;0;botR;botR;topL;0;topR;topR;;botL;0;topR;topR;topL;topL;botR;botR
+botL;0;botR;botR;topL;0;topR;topR;;botL;0;topR;topR;topL;topL;botR;botR
+botL;0;botR;botR;topL;0;topR;topR;;botL;0;topR;topR;topL;topL;botR;botR
+;;;;;;;;;;;;;;;;
+beatless repeat;;;;;;;;;;;;;;;;
+botL;0;0;0;topR;0;0;0;;botL;0;0;0;topR;0;0;0
+botL;0;0;0;topR;0;0;0;;botL;0;0;0;topR;0;0;0
+botL;0;0;0;topR;0;0;0;;botL;0;0;0;topR;0;0;0
+botL;0;0;0;topR;0;0;0;;botL;0;0;0;topR;0;0;0
+;;;;;;;;;;;;;;;;
+drop 2;;;;;;;;;;;;;;;;
+topL;0;botR;0;topL;0;botR;0;;topL;0;botR;0;topL;0;botR;0
+topL;0;botR;0;topL;0;botR;0;;topL;0;botR;0;topL;0;botR;0
+botL;botL;topL;botL;botL;botL;topL;botL;;botL;botL;topR;botL;botR;botR;topR;0
+topL;topL;topR;topR;topL;topL;topR;topR;;topL;0;botR;0;TopL;0;0;0
+;;;;;;;;;;;;;;;;
+pattern 1 repeat;;;;;;;;;;;;;;;;
+botR;botR;botL;0;botR;botR;topL;0;;botR;botR;botR;0;botR;botR;topR;0
+botR;botR;botL;0;botR;botR;topL;0;;botR;botR;botR;0;botR;botR;topR;0
+botR;botR;botL;0;botR;botR;topL;0;;botR;botR;botR;0;botR;botR;topR;0
+botR;botR;botL;0;botR;botR;topL;0;;botR;botR;botR;0;botR;botR;topR;0

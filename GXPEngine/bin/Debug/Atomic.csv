@@ -1,0 +1,55 @@
+intro:,,,,,,,,,,,,,,,,
+0,0,0,0,0,0,0,0,,0,0,0,0,,,,
+,,,,,,,,,,,,,,,,
+warm up:,,,,,,,,,,,,,,,,
+botL,0,0,0,0,0,0,0,,0,0,0,0,0,0,0,0
+botR,0,0,0,0,0,0,0,,0,0,0,0,0,0,0,0
+topR,0,0,0,0,0,0,0,,0,0,0,0,0,0,0,0
+topL,0,0,0,0,0,0,0,,0,0,0,0,0,0,0,0
+,,,,,,,,,,,,,,,,
+first wind up and drop:,,,,,,,,,,,,,,,,
+botL,0,0,0,0,0,0,0,,0,0,0,0,0,0,0,0
+botL,0,botL,0,botL,0,botL,0,,botR,0,botR,0,botR,0,botR,0
+0,botL,topR,0,topR,0,topR,0,,botR,botL,topR,0,topR,0,topR,0
+topL,0,topR,0,topL,0,topR,0,,0,0,0,0,0,0,topL,0
+,,,,,,,,,,,,,,,,
+main 1:,,,,,,,,,,,,,,,,
+botR,0,topL,0,botR,0,topL,0,,botL,0,topR,0,botL,0,topR,0
+botR,0,topL,0,botR,0,topL,0,,botL,0,topR,0,botL,0,topR,0
+botR,0,topL,0,botR,0,topL,0,,botL,0,topR,0,botL,0,topR,0
+botR,0,topL,0,botR,0,topL,0,,botL,0,topR,0,botL,0,topR,0
+,,,,,,,,,,,,,,,,
+main 2 (skips):,,,,,,,,,,,,,,,,
+botR,0,topL,0,botR,0,0,0,,botL,0,botL,0,botL,0,botL,0
+botL,0,topR,0,botL,0,topR,0,,botR,0,botR,0,botR,0,0,botL
+botR,0,topL,0,botR,0,topL,0,,botR,0,topL,0,botR,0,topL,0
+botR,0,topL,0,0,0,topL,0,,0,botL,0,topR,0,botL,topR,0
+,,,,,,,,,,,,,,,,
+intermission:,,,,,,,,,,,,,,,,
+topL,0,0,0,topL,0,0,0,,topR,0,0,0,topR,0,0,0
+topL,0,0,0,topL,0,0,0,,topR,0,0,0,topR,0,0,0
+topL,0,botL,0,topL,0,0,0,,topR,0,0,0,topR,0,0,0
+topL,0,0,0,topL,0,0,0,,topR,0,0,0,topR,0,0,0
+,,,,,,,,,,,,,,,,
+intermission with beats:,,,,,,,,,,,,,,,,
+botL,0,topL,0,botL,botL,topL,0,,botL,botL,topL,0,botL,topL,topL,0
+botL,botL,topL,0,botL,0,topL,0,,botL,0,topL,0,0,botL,botR,0
+botR,0,topR,0,botR,botR,topR,0,,botR,botR,topL,0,botR,botR,topR,0
+botL,botR,topL,0,botR,0,topL,0,,0,0,topL,0,0,0,topL,topL
+,,,,,,,,,,,,,,,,
+second wind up:,,,,,,,,,,,,,,,,
+0,0,botR,0,botR,0,botR,0,,0,0,botR,0,0,0,botL,0
+botL,0,botR,0,botL,0,botR,0,,botL,0,botR,0,botL,0,botR,0
+0,botL,botL,botR,botL,botR,botL,botR,,botL,botR,botL,botR,botL,botR,botL,botR
+botL,botL,botL,botL,botL,botL,botL,botL,,0,0,0,0,botL,0,botL,0
+,,,,,,,,,,,,,,,,
+main repeat (ish):,,,,,,,,,,,,,,,,
+botR,0,topL,0,botR,0,topL,0,,botL,0,topR,0,botL,0,topR,0
+botR,0,topL,0,botR,0,topL,0,,botL,0,topR,0,botL,0,topR,0
+botR,0,topL,0,botR,0,topL,0,,botL,0,topR,0,botL,0,topR,0
+botR,0,topL,0,botR,0,topL,0,,botL,0,topR,0,botL,0,topR,0
+,,,,,,,,,,,,,,,,
+botR,0,topL,0,botR,0,0,0,,botL,0,botL,0,botL,0,botL,0
+botL,0,topR,0,botL,0,topR,0,,botR,0,botR,0,botR,0,0,botL
+botR,0,topL,0,botR,0,topL,0,,botL,0,topR,0,botL,0,topR,0
+botR,0,topL,0,0,0,topL,0,,0,botL,0,topR,0,botL,topR,0
