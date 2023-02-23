@@ -78,7 +78,7 @@ public class Enemy : Sprite
         MyGame myGame = (MyGame)game;
 
         // Update lives:
-        myGame.lives += 1;
+        myGame.lives += 0.5f;
 
         if (myGame.lives > 15)
         {
@@ -127,12 +127,12 @@ public class Enemy : Sprite
         Destroy();
 
         // Add Particle:
-        Particle newParticle = new Particle("hit!.png", BlendMode.ADDITIVE, 1000);
-        newParticle.SetColor(Color.White, Color.Black).
+        Particle newParticle = new Particle("hit!.png", BlendMode.NORMAL, 500);
+        newParticle.SetColor(Color.White, Color.White).
         SetScale(1, 1).
-        SetVelocity(0, -5);
-        newParticle.SetXY(game.width / 2, game.height / 2);
-        myGame.LateAddChild(newParticle);
+        SetVelocity(0, -2);
+        newParticle.SetXY(game.width / 2, game.height / 2 - 100);
+        myGame.layer0.LateAddChild(newParticle);
 
         // Create lightning:
         if (Input.GetKeyDown(Key.Q))
@@ -166,12 +166,12 @@ public class Enemy : Sprite
         HUD.UpdateLives(myGame.lives);
 
         // Add Particle
-        Particle newParticle = new Particle("miss!.png", BlendMode.ADDITIVE, 1000);
-        //newParticle.SetColor(Color.White, Color.Black).
-        newParticle.SetScale(1, 1).
-        SetVelocity(0, -5);
-        newParticle.SetXY(game.width / 2, game.height / 2);
-        myGame.LateAddChild(newParticle);
+        Particle newParticle = new Particle("miss!.png", BlendMode.NORMAL, 500);
+        newParticle.SetColor(Color.White, Color.White).
+        SetScale(1, 1).
+        SetVelocity(0, -2);
+        newParticle.SetXY(game.width / 2, game.height / 2 - 100);
+        myGame.layer0.LateAddChild(newParticle);
     }
 
     void Move()

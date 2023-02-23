@@ -31,7 +31,7 @@ public static class HUD
         scoreBoard.Text("Score: " + score);
     }
 
-    public static EasyDraw DrawLives(int liveTotal)
+    public static EasyDraw DrawLives(float liveTotal)
     {
         lives = new EasyDraw(200, 800);
         lives.SetOrigin(0, 0);
@@ -47,13 +47,13 @@ public static class HUD
         energyText.SetXY(650, 595);
         return scoreBoard;
     }
-    public static void UpdateLives(int liveTotal)
+    public static void UpdateLives(float liveTotal)
     {
         lives.ClearTransparent();
         lives.Fill(Color.Gray);
         lives.Rect(100, 403, 200, 20);
         lives.Fill(153, 255, 0);
-        lives.Rect(100, 403, (200 / 15) * liveTotal, 20);
+        lives.Rect(100, 403, (200f / 15f) * liveTotal, 20);
     }
 
     public static EasyDraw DrawCombo(int combo)

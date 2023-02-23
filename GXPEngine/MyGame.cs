@@ -10,7 +10,7 @@ using System.Xml.Schema;
 public class MyGame : Game
 {
     public SoundChannel channel;
-    public int lives = 15;
+    public float lives = 15;
     public int score = 0;
     public int combo = 0;
     public List<Enemy> enemies = new List<Enemy>();
@@ -30,7 +30,7 @@ public class MyGame : Game
 
     Sprite background;
 
-    public MyGame() : base(1366, 768, false)
+    public MyGame() : base(1366, 768, true)
     {
         targetFps = 60;
         MakeMainMenu();
