@@ -78,7 +78,7 @@ public class Enemy : Sprite
         MyGame myGame = (MyGame)game;
 
         // Update lives:
-        myGame.lives += 0.5f;
+        myGame.lives++;
 
         if (myGame.lives > 15)
         {
