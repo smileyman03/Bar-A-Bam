@@ -35,7 +35,7 @@ public class MyGame : Game
     public int timeRan = 0;
     int lifeTime = 200;
 
-    public MyGame() : base(1366, 768, true)
+    public MyGame() : base(1366, 768, false)
     {
         targetFps = 60;
         MakeMainMenu();
