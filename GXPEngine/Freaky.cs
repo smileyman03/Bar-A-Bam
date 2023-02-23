@@ -87,7 +87,6 @@ public class Freaky
     {
         if (BeatHandler.GetBeat() <= amountOfBeats)
         {
-            Console.WriteLine("beat: " + (BeatHandler.GetBeat() - 1));
             currentValue = level[BeatHandler.GetBeat() - 1];
             StepLevelHandling(currentValue);
         }

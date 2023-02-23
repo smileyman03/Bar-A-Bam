@@ -43,7 +43,7 @@ public class MainMenu : GameObject
             }
         }
 
-        if (!isInTitleScreen) maincharacter.Animate(0.01f);
+        if (!isInTitleScreen) maincharacter.Animate(0.025f);
 
         // Clicked on a button:
         if (isInMenu)

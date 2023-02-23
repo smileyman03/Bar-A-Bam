@@ -6,6 +6,7 @@ using System.Drawing.Printing;
 using System.Diagnostics;
 using System.Linq;
 using System.Xml.Schema;
+using System.Threading;
 
 public class MyGame : Game
 {
@@ -20,6 +21,7 @@ public class MyGame : Game
     public int msToMove;
     public Boolean isPlaying = false;
     public Boolean completedLevel = false;
+    public Pivot screenshake;
 
     public int currentBeat = 0;
     public int lastBeat = 0;
@@ -29,6 +31,9 @@ public class MyGame : Game
     public Pivot layer2;
 
     Sprite background;
+    public Boolean isShaking = false;
+    public int timeRan = 0;
+    int lifeTime = 200;
 
     public MyGame() : base(1366, 768, true)
     {
@@ -46,6 +51,21 @@ public class MyGame : Game
             Beats();
             LoseGame();
             DrumInput();
+
+            if (isShaking)
+            {
+                timeRan += Time.deltaTime;
+                screenshake.x *= (Mathf.Pow(-1, timeRan));
+                screenshake.y *= (Mathf.Pow(-1, timeRan));
+
+                if (timeRan >= lifeTime)
+                {
+                    timeRan = 0;
+                    isShaking = false;
+                    screenshake.x = 0;
+                    screenshake.y = 0;
+                }
+            }
         }
     }
 
@@ -70,22 +90,22 @@ public class MyGame : Game
                     {
                         case "Top_Left":
                             enemy = new Enemy(DontCare.startingCorner, "Enemy_TopL.png");
-                            AddChild(enemy);
+                            layer1.AddChild(enemy);
                             enemies.Add(enemy);
                             break;
                         case "Top_Right":
                             enemy = new Enemy(DontCare.startingCorner, "Enemy_TopR.png");
-                            AddChild(enemy);
+                            layer1.AddChild(enemy);
                             enemies.Add(enemy);
                             break;
                         case "Bottom_Left":
                             enemy = new Enemy(DontCare.startingCorner, "Enemy_BotL.png");
-                            AddChild(enemy);
+                            layer2.AddChild(enemy);
                             enemies.Add(enemy);
                             break;
                         case "Bottom_Right":
                             enemy = new Enemy(DontCare.startingCorner, "Enemy_BotR.png");
-                            AddChild(enemy);
+                            layer2.AddChild(enemy);
                             enemies.Add(enemy);
                             break;
                     }
@@ -95,6 +115,24 @@ public class MyGame : Game
                 if (BeatHandler.GetBeat() >= 420)
                 {
                     completedLevel = true;
+
+                    for (int i = enemies.Count - 1; i >= 0; i--)
+                    {
+                        enemies.Remove(enemies[i]);
+                    }
+
+                    // Remove enemies:
+                    List<GameObject> children = GetChildren();
+                    foreach (GameObject child in children)
+                    {
+                        if (child is Enemy)
+                        {
+                            Enemy enemy = (Enemy)child;
+                            enemies.Remove(enemy);
+                            enemy.Remove();
+                        }
+                    }
+
                     DestroyChildren();
                     if (channel.IsPlaying) channel.Stop();
                     MainMenu mainMenu = new MainMenu();
@@ -113,22 +151,22 @@ public class MyGame : Game
                     {
                         case "Top_Left":
                             enemy = new Enemy(Freaky.startingCorner, "Enemy_TopL.png");
-                            AddChild(enemy);
+                            layer1.AddChild(enemy);
                             enemies.Add(enemy);
                             break;
                         case "Top_Right":
                             enemy = new Enemy(Freaky.startingCorner, "Enemy_TopR.png");
-                            AddChild(enemy);
+                            layer1.AddChild(enemy);
                             enemies.Add(enemy);
                             break;
                         case "Bottom_Left":
                             enemy = new Enemy(Freaky.startingCorner, "Enemy_BotL.png");
-                            AddChild(enemy);
+                            layer2.AddChild(enemy);
                             enemies.Add(enemy);
                             break;
                         case "Bottom_Right":
                             enemy = new Enemy(Freaky.startingCorner, "Enemy_BotR.png");
-                            AddChild(enemy);
+                            layer2.AddChild(enemy);
                             enemies.Add(enemy);
                             break;
                     }
@@ -138,6 +176,24 @@ public class MyGame : Game
                 if (BeatHandler.GetBeat() >= 711)
                 {
                     completedLevel = true;
+
+                    for (int i = enemies.Count - 1; i >= 0; i--)
+                    {
+                        enemies.Remove(enemies[i]);
+                    }
+
+                    // Remove enemies:
+                    List<GameObject> children = GetChildren();
+                    foreach (GameObject child in children)
+                    {
+                        if (child is Enemy)
+                        {
+                            Enemy enemy = (Enemy)child;
+                            enemies.Remove(enemy);
+                            enemy.Remove();
+                        }
+                    }
+
                     DestroyChildren();
                     if (channel.IsPlaying) channel.Stop();
                     MainMenu mainMenu = new MainMenu();
@@ -156,22 +212,22 @@ public class MyGame : Game
                     {
                         case "Top_Left":
                             enemy = new Enemy(Atomic.startingCorner, "Enemy_TopL.png");
-                            AddChild(enemy);
+                            layer1.AddChild(enemy);
                             enemies.Add(enemy);
                             break;
                         case "Top_Right":
                             enemy = new Enemy(Atomic.startingCorner, "Enemy_TopR.png");
-                            AddChild(enemy);
+                            layer1.AddChild(enemy);
                             enemies.Add(enemy);
                             break;
                         case "Bottom_Left":
                             enemy = new Enemy(Atomic.startingCorner, "Enemy_BotL.png");
-                            AddChild(enemy);
+                            layer2.AddChild(enemy);
                             enemies.Add(enemy);
                             break;
                         case "Bottom_Right":
                             enemy = new Enemy(Atomic.startingCorner, "Enemy_BotR.png");
-                            AddChild(enemy);
+                            layer2.AddChild(enemy);
                             enemies.Add(enemy);
                             break;
                     }
@@ -181,6 +237,24 @@ public class MyGame : Game
                 if (BeatHandler.GetBeat() >= 620)
                 {
                     completedLevel = true;
+
+                    for (int i = enemies.Count - 1; i >= 0; i--)
+                    {
+                        enemies.Remove(enemies[i]);
+                    }
+
+                    // Remove enemies:
+                    List<GameObject> children = GetChildren();
+                    foreach (GameObject child in children)
+                    {
+                        if (child is Enemy)
+                        {
+                            Enemy enemy = (Enemy)child;
+                            enemies.Remove(enemy);
+                            enemy.Remove();
+                        }
+                    }
+
                     DestroyChildren();
                     if (channel.IsPlaying) channel.Stop();
                     MainMenu mainMenu = new MainMenu();
@@ -199,6 +273,11 @@ public class MyGame : Game
             channel.Frequency -= 200;
             if (channel.Frequency <= 35000) channel.Stop();
 
+            for (int i  = enemies.Count - 1; i >= 0; i--)
+            {
+                enemies.Remove(enemies[i]);
+            }
+            
             // Remove enemies:
             List<GameObject> children = GetChildren();
             foreach (GameObject child in children)
@@ -301,12 +380,15 @@ public class MyGame : Game
 
     public void MakeLayers()
     {
+        screenshake = new Pivot();
+        screenshake.x = 0;
+        AddChild(screenshake);
         layer0 = new Pivot();
-        AddChild(layer0);
+        screenshake.AddChild(layer0);
         layer1 = new Pivot();
-        AddChild(layer1);
+        screenshake.AddChild(layer1);
         layer2 = new Pivot();
-        AddChild(layer2);
+        screenshake.AddChild(layer2);
     }
 
     static void Main()

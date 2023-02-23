@@ -138,21 +138,45 @@ public class Enemy : Sprite
         if (Input.GetKeyDown(Key.Q))
         {
             myGame.CreateLightning(this.x, this.y);
+
+            // Screen shake:
+            myGame.screenshake.x = -0.65f;
+            myGame.screenshake.y = -0.65f;
+            myGame.isShaking = true;
+            myGame.timeRan = 0;
         }
 
         if (Input.GetKeyDown(Key.E))
         {
             myGame.CreateLightning(this.x, this.y);
+
+            // Screen shake:
+            myGame.screenshake.x = 0.65f;
+            myGame.screenshake.y = -0.65f;
+            myGame.isShaking = true;
+            myGame.timeRan = 0;
         }
 
         if (Input.GetKeyDown(Key.A))
         {
             myGame.CreateLightning(this.x, this.y);
+
+            // Screen shake:
+            myGame.screenshake.x = -0.65f;
+            myGame.screenshake.y = 0.65f;
+            myGame.isShaking = true;
+            myGame.timeRan = 0;
         }
 
         if (Input.GetKeyDown(Key.D))
         {
             myGame.CreateLightning(this.x, this.y);
+
+            // Screen shake:
+            myGame.screenshake.x = 0.65f;
+            myGame.screenshake.y = 0.65f;
+            myGame.isShaking = true;
+            myGame.timeRan = 0;
         }
     }
 
